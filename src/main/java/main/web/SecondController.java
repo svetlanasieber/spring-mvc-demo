@@ -21,7 +21,7 @@ public class SecondController {
         String timeNowText = "Time now is " + LocalTime.now();
         modelAndView.addObject("message", timeNowText);
 
-        // Избираме коя HTML страница да покажем на потребителя
+      
         modelAndView.setViewName("info");
 
         return modelAndView;
@@ -33,7 +33,7 @@ public class SecondController {
         String timeNowText = "Time now is " + LocalTime.now();
         model.addAttribute("message", timeNowText);
 
-        // Избираме коя HTML страница да покажем на потребителя
+        
         return "info";
     }
 }
